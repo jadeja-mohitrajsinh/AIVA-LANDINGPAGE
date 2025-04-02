@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIVA Documentation - Advanced AI Assistant</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Söhne:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -492,18 +492,18 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="./assets/Icon.ico" alt="AIVA Logo">
+            <a href="../index.html" class="logo">
+                <img src="../assets/Icon.ico" alt="AIVA Logo">
                 <span>AIVA</span>
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="documentation.html" class="active">Documentation</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="../index.html#contact">Contact</a>
             </div>
             <div class="nav-buttons">
                 <button class="theme-toggle">
-                    <img src="./assets/moon-solid.svg" alt="Dark Mode" class="theme-icon">
+                    <img src="../assets/sun-solid.svg" alt="Light Mode" class="theme-icon">
                 </button>
             </div>
         </div>
@@ -1021,49 +1021,44 @@ async function textToSpeechAPI(text) {
         <i class="fas fa-bars"></i>
     </div>
 
+    <script src="../assets/js/script.js"></script>
     <script>
-        // Theme toggle functionality
+        // Theme Toggle Functionality
         const themeToggle = document.querySelector('.theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+
+        // Check for saved theme preference, otherwise use system preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+        } else {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+            updateThemeIcon(theme);
+        }
+
+        // Theme toggle click handler
         themeToggle.addEventListener('click', () => {
-            document.body.setAttribute('data-theme', 
-                document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
-            );
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
         });
 
-        // Documentation navigation
-        const docNav = document.querySelector('.doc-nav');
-        const sections = document.querySelectorAll('.doc-section');
-        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            docNav.querySelectorAll('a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Mobile navigation toggle
-        mobileNavToggle.addEventListener('click', () => {
-            docNav.parentElement.classList.toggle('active');
-        });
-
-        // Close mobile navigation when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!docNav.contains(e.target) && !mobileNavToggle.contains(e.target)) {
-                docNav.parentElement.classList.remove('active');
+        // Update theme icon based on current theme
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.src = '../assets/sun-solid.svg';
+                themeIcon.alt = 'Light Mode';
+            } else {
+                themeIcon.src = '../assets/moon-solid.svg';
+                themeIcon.alt = 'Dark Mode';
             }
-        });
+        }
     </script>
 </body>
 </html> 

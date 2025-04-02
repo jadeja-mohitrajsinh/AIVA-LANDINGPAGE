@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIVA - Advanced AI Assistant</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="./assets/Icon.ico" alt="AIVA Logo">
+                <img src="assets/Icon.ico" alt="AIVA Logo">
                 <span>AIVA</span>
             </a>
             <div class="nav-links">
@@ -22,11 +22,11 @@
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#contact">Contact</a>
-                <a href="documentation.html">Documentation</a>
+                <a href="landingpage/documentation.html">Documentation</a>
             </div>
             <div class="nav-buttons">
                 <button class="theme-toggle">
-                    <img src="./assets/moon-solid.svg" alt="Dark Mode" class="theme-icon">
+                    <img src="assets/sun-solid.svg" alt="Light Mode" class="theme-icon">
                 </button>
                 <a href="https://drive.google.com/uc?id=1nWvul57nE4Y4AFEFLOQY0-rlgxhWeNrZ" class="btn btn-primary">Get App</a>
             </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-gif-container">
-                    <img src="./assets/AIVA.gif" alt="AIVA Demo" class="hero-gif">
+                    <img src="assets/AIVA.gif" alt="AIVA Demo" class="hero-gif">
                     <div class="floating-elements">
                         <div class="floating-element element-1">
                             <i class="fas fa-code"></i>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                     <div class="project-image">
-                        <img src="./assets/dark mode.png" alt="AIVA AI Assistant">
+                        <img src="AIVA-APP-SS/dark mode.png" alt="AIVA AI Assistant">
                     </div>
                 </div>
 
@@ -145,11 +145,11 @@
                             <span class="feature-pill">Cloud Hosted</span>
                         </div>
                         <div class="project-cta">
-                            <a href="https://aiva-web.herokuapp.com" class="btn btn-primary">
+                            <a href="https://aiva-client.onrender.com/" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 Launch App
                             </a>
-                            <a href="https://github.com/yourusername/AIVA-Web" class="btn btn-secondary">
+                            <a href="https://github.com/jadeja-mohitrajsinh/AIVA" class="btn btn-secondary">
                                 <i class="fab fa-github"></i>
                                 View Source
                             </a>
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                     <div class="project-image">
-                        <img src="./assets/web-platform.png" alt="AIVA Web Platform">
+                        <img src="AIVA-WEB-SS/dashboard/1.png" alt="AIVA Web Platform">
                     </div>
                 </div>
             </div>
@@ -255,26 +255,121 @@
     <section id="screenshots" class="screenshots">
         <div class="container">
             <h2>App Screenshots</h2>
+            <p class="section-description">Explore the beautiful and intuitive interface of AIVA</p>
             <div class="screenshots-grid">
                 <div class="screenshot-card">
-                    <img src="./assets/dark mode.png" alt="Dark Mode">
-                    <h3>Dark Mode</h3>
-                    <p>Comfortable viewing experience in low-light conditions</p>
+                    <div class="screenshot-image-container">
+                        <img src="AIVA-APP-SS/dark mode.png" alt="Dark Mode">
+                        <div class="screenshot-overlay">
+                            <div class="feature-tags">
+                                <span class="feature-tag">Dark Theme</span>
+                                <span class="feature-tag">Eye Comfort</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-content">
+                        <h3>Dark Mode</h3>
+                        <p>Comfortable viewing experience in low-light conditions</p>
+                        <div class="screenshot-features">
+                            <span><i class="fas fa-moon"></i> Reduced Eye Strain</span>
+                            <span><i class="fas fa-palette"></i> Customizable Theme</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="screenshot-card">
-                    <img src="./assets/text mode.png" alt="Text Mode">
-                    <h3>Text Mode</h3>
-                    <p>Clean and focused text interface for better readability</p>
+                    <div class="screenshot-image-container">
+                        <img src="AIVA-APP-SS/text mode.png" alt="Text Mode">
+                        <div class="screenshot-overlay">
+                            <div class="feature-tags">
+                                <span class="feature-tag">Clean UI</span>
+                                <span class="feature-tag">Focus Mode</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-content">
+                        <h3>Text Mode</h3>
+                        <p>Clean and focused text interface for better readability</p>
+                        <div class="screenshot-features">
+                            <span><i class="fas fa-font"></i> Custom Fonts</span>
+                            <span><i class="fas fa-columns"></i> Layout Options</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="screenshot-card">
-                    <img src="./assets/Voice Mode.png" alt="Voice Mode">
-                    <h3>Voice Mode</h3>
-                    <p>Hands-free interaction with voice commands</p>
+                    <div class="screenshot-image-container">
+                        <img src="AIVA-APP-SS/Voice Mode.png" alt="Voice Mode">
+                        <div class="screenshot-overlay">
+                            <div class="feature-tags">
+                                <span class="feature-tag">Voice Control</span>
+                                <span class="feature-tag">Hands-free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-content">
+                        <h3>Voice Mode</h3>
+                        <p>Hands-free interaction with voice commands</p>
+                        <div class="screenshot-features">
+                            <span><i class="fas fa-microphone"></i> Voice Recognition</span>
+                            <span><i class="fas fa-language"></i> Multi-language</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="screenshot-card">
-                    <img src="./assets/Broswer Control.png" alt="Browser Control">
-                    <h3>Browser Control</h3>
-                    <p>Seamless integration with your web browser</p>
+                    <div class="screenshot-image-container">
+                        <img src="AIVA-APP-SS/Broswer Control.png" alt="Browser Control">
+                        <div class="screenshot-overlay">
+                            <div class="feature-tags">
+                                <span class="feature-tag">Browser Sync</span>
+                                <span class="feature-tag">Seamless</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-content">
+                        <h3>Browser Control</h3>
+                        <p>Seamless integration with your web browser</p>
+                        <div class="screenshot-features">
+                            <span><i class="fas fa-globe"></i> Cross-browser</span>
+                            <span><i class="fas fa-sync"></i> Real-time Sync</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-image-container">
+                        <img src="AIVA-WEB-SS/task/view task details.png" alt="Task Management">
+                        <div class="screenshot-overlay">
+                            <div class="feature-tags">
+                                <span class="feature-tag">Task Tracking</span>
+                                <span class="feature-tag">Organized</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-content">
+                        <h3>Task Management</h3>
+                        <p>Organize and track your tasks with detailed views</p>
+                        <div class="screenshot-features">
+                            <span><i class="fas fa-tasks"></i> Task Lists</span>
+                            <span><i class="fas fa-chart-bar"></i> Progress Tracking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-image-container">
+                        <img src="AIVA-WEB-SS/calender/calender-task-view.png" alt="Calendar View">
+                        <div class="screenshot-overlay">
+                            <div class="feature-tags">
+                                <span class="feature-tag">Calendar</span>
+                                <span class="feature-tag">Scheduling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-content">
+                        <h3>Calendar Integration</h3>
+                        <p>Schedule and manage your tasks in a calendar view</p>
+                        <div class="screenshot-features">
+                            <span><i class="fas fa-calendar-alt"></i> Event Planning</span>
+                            <span><i class="fas fa-clock"></i> Time Management</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -476,6 +571,30 @@
         </div>
     </section>
 
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1000">0</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Supported Languages</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100000">0</div>
+                    <div class="stat-label">Lines of Code Generated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">User Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
@@ -508,7 +627,6 @@
                         <p>Yes, we take security seriously. All code and data are encrypted, and we never store sensitive information. Enterprise plans include additional security features and compliance certifications.</p>
                     </div>
                 </div>
-               
             </div>
         </div>
     </section>
@@ -533,7 +651,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <img src="./assets/Icon.ico" alt="AIVA Logo">
+                        <img src="assets/Icon.ico" alt="AIVA Logo">
                         <span>AIVA</span>
                     </div>
                     <p>Your intelligent AI assistant for coding and development</p>
@@ -562,7 +680,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script>
         // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(question => {
