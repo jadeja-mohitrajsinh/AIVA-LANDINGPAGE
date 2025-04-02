@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIVA - Advanced AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="./assets/Icon.ico" alt="AIVA Logo">
+                <span>AIVA</span>
+            </a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact">Contact</a>
+                <a href="documentation.html">Documentation</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="theme-toggle">
+                    <img src="./assets/moon-solid.svg" alt="Dark Mode" class="theme-icon">
+                </button>
+                <a href="https://drive.google.com/uc?id=1nWvul57nE4Y4AFEFLOQY0-rlgxhWeNrZ" class="btn btn-primary">Get App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AIVA</span>
+                    <span class="subtitle">Innovative Tech Solutions</span>
+                </h1>
+                <p class="hero-subtitle">Empowering developers with cutting-edge AI and web technologies</p>
+                <div class="hero-features">
+                    <div class="feature-tag">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Assistant</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fas fa-globe"></i>
+                        <span>Web Platform</span>
+                    </div>
+                    <div class="feature-tag">
+                        <i class="fas fa-bolt"></i>
+                        <span>Lightning Fast</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Explore Projects
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-gif-container">
+                    <img src="./assets/AIVA.gif" alt="AIVA Demo" class="hero-gif">
+                    <div class="floating-elements">
+                        <div class="floating-element element-1">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-element element-2">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="floating-element element-3">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="projects-grid">
+                <!-- AIVA AI Assistant -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AIVA AI Assistant</h3>
+                        <p>Advanced AI-powered coding assistant that helps developers write, debug, and optimize code across multiple programming languages.</p>
+                        <div class="project-features">
+                            <span class="feature-pill">AI-Powered</span>
+                            <span class="feature-pill">Code Generation</span>
+                            <span class="feature-pill">Multi-language</span>
+                            <span class="feature-pill">Desktop App</span>
+                        </div>
+                        <div class="project-cta">
+                            <a href="https://drive.google.com/uc?id=1nWvul57nE4Y4AFEFLOQY0-rlgxhWeNrZ" class="btn btn-primary">
+                                <i class="fas fa-download"></i>
+                                Download App
+                            </a>
+                            <a href="https://github.com/yourusername/AIVA" class="btn btn-secondary">
+                                <i class="fab fa-github"></i>
+                                View Source
+                            </a>
+                        </div>
+                        <div class="deployment-status">
+                            <i class="fas fa-circle text-success"></i>
+                            <span>Latest Version: 1.0.0</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="./assets/dark mode.png" alt="AIVA AI Assistant">
+                    </div>
+                </div>
+
+                <!-- AIVA Web Platform -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>AIVA Web Platform</h3>
+                        <p>Modern web application built with the MERN stack (MongoDB, Express.js, React, Node.js) offering powerful features and seamless user experience.</p>
+                        <div class="project-features">
+                            <span class="feature-pill">MERN Stack</span>
+                            <span class="feature-pill">Full-Stack</span>
+                            <span class="feature-pill">Responsive</span>
+                            <span class="feature-pill">Cloud Hosted</span>
+                        </div>
+                        <div class="project-cta">
+                            <a href="https://aiva-web.herokuapp.com" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Launch App
+                            </a>
+                            <a href="https://github.com/yourusername/AIVA-Web" class="btn btn-secondary">
+                                <i class="fab fa-github"></i>
+                                View Source
+                            </a>
+                        </div>
+                        <div class="deployment-status">
+                            <i class="fas fa-circle text-success"></i>
+                            <span>Status: Live</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="./assets/web-platform.png" alt="AIVA Web Platform">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Advanced AI</h3>
+                    <p>Powered by cutting-edge artificial intelligence for natural conversations and intelligent responses</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Code Assistant</h3>
+                    <p>Expert help with coding, debugging, and development tasks across multiple programming languages</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multi-language Support</h3>
+                    <p>Communicate in multiple natural languages and get assistance with various programming languages</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Enterprise-grade security and data protection for your peace of mind</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Smart Interface</h3>
+                    <p>Intuitive and modern interface designed for the best user experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Real-time Updates</h3>
+                    <p>Stay up-to-date with the latest features and improvements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <h3>Launch AIVA</h3>
+                    <p>Start the application and get ready to experience AI assistance</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Ask Questions</h3>
+                    <p>Type your questions or use voice input to interact with AIVA</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Get Solutions</h3>
+                    <p>Receive intelligent responses and solutions to your queries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>App Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <img src="./assets/dark mode.png" alt="Dark Mode">
+                    <h3>Dark Mode</h3>
+                    <p>Comfortable viewing experience in low-light conditions</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="./assets/text mode.png" alt="Text Mode">
+                    <h3>Text Mode</h3>
+                    <p>Clean and focused text interface for better readability</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="./assets/Voice Mode.png" alt="Voice Mode">
+                    <h3>Voice Mode</h3>
+                    <p>Hands-free interaction with voice commands</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="./assets/Broswer Control.png" alt="Browser Control">
+                    <h3>Browser Control</h3>
+                    <p>Seamless integration with your web browser</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p class="section-description">Explore AIVA's capabilities and experience in AI assistance</p>
+            
+            <div class="resume-grid">
+                <!-- Experience Section -->
+                <div class="resume-section">
+                    <h3><i class="fas fa-briefcase"></i> Core Capabilities</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Code Generation & Analysis</h4>
+                            <p class="timeline-meta">Advanced AI-Powered</p>
+                            <p class="timeline-description">
+                                Expertise in generating, analyzing, and optimizing code across multiple programming languages.
+                                Capable of understanding complex codebases and providing intelligent suggestions.
+                            </p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h4>Natural Language Processing</h4>
+                            <p class="timeline-meta">Context-Aware Communication</p>
+                            <p class="timeline-description">
+                                Advanced natural language understanding and generation capabilities.
+                                Able to maintain context and provide coherent, relevant responses.
+                            </p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h4>Problem Solving</h4>
+                            <p class="timeline-meta">Intelligent Solutions</p>
+                            <p class="timeline-description">
+                                Skilled at analyzing complex problems and providing efficient, practical solutions.
+                                Utilizes pattern recognition and best practices in problem-solving approaches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="resume-section">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Ruby</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Frameworks & Tools</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">Spring</span>
+                                <span class="skill-tag">Docker</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>AI & Machine Learning</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Natural Language Processing</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Neural Networks</span>
+                                <span class="skill-tag">Pattern Recognition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specializations Section -->
+                <div class="resume-section">
+                    <h3><i class="fas fa-star"></i> Specializations</h3>
+                    <div class="specializations-grid">
+                        <div class="specialization-item">
+                            <div class="specialization-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="specialization-content">
+                                <h4>AI Development</h4>
+                                <p>Expert in AI algorithms and machine learning implementations</p>
+                            </div>
+                        </div>
+                        
+                        <div class="specialization-item">
+                            <div class="specialization-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="specialization-content">
+                                <h4>Code Architecture</h4>
+                                <p>Proficient in designing scalable and maintainable code structures</p>
+                            </div>
+                        </div>
+                        
+                        <div class="specialization-item">
+                            <div class="specialization-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="specialization-content">
+                                <h4>Debugging & Optimization</h4>
+                                <p>Skilled at identifying and resolving complex code issues</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-description">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>123 AI Street, Tech Valley</p>
+                            <p>Silicon City, 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@aiva.ai">contact@aiva.ai</a></p>
+                            <p><a href="mailto:support@aiva.ai">support@aiva.ai</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does AIVA work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>AIVA uses advanced AI algorithms to understand your coding needs and provide intelligent assistance. Simply type your questions or requirements, and AIVA will help you with code generation, debugging, and optimization.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What programming languages are supported?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>AIVA supports all major programming languages including Python, JavaScript, Java, C++, and many more. Our AI is constantly learning and expanding its language support.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my code secure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we take security seriously. All code and data are encrypted, and we never store sensitive information. Enterprise plans include additional security features and compliance certifications.</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest updates and features</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="./assets/Icon.ico" alt="AIVA Logo">
+                        <span>AIVA</span>
+                    </div>
+                    <p>Your intelligent AI assistant for coding and development</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AIVA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current FAQ item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Statistics Counter Animation
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-count'));
+            const duration = 2000; // 2 seconds
+            const step = target / (duration / 16); // 60fps
+            let current = 0;
+
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    element.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            };
+
+            updateCounter();
+        }
+
+        // Intersection Observer for statistics
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.stat-number').forEach(counter => {
+                        animateCounter(counter);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        // Observe the statistics section
+        const statisticsSection = document.querySelector('.statistics');
+        if (statisticsSection) {
+            observer.observe(statisticsSection);
+        }
+    </script>
+</body>
+</html> 
